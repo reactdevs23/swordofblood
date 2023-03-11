@@ -469,7 +469,7 @@ export default function Banner() {
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/banner/presale-banner2-m.jpg"]}
+              src={images["home/banner/presale-banner1-d.jpg"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
