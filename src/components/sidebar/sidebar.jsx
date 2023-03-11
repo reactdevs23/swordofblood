@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Localization from "../../context/localization";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -28,7 +28,8 @@ export default function Sidebar({ showSidebar }) {
           />
         </NavLink>
         <div className={styles.navItems}>
-          <p
+          <Link
+            to="/"
             className={[styles.navItem, styles.navBtn].join(" ")}
             onClick={() => {
               setProjectDropDown(false);
@@ -36,7 +37,7 @@ export default function Sidebar({ showSidebar }) {
             }}
           >
             {config.appName}
-          </p>
+          </Link>
           <div
             className={`${styles.dropDownContainer} ${styles.aboutDropDownContainer}`}
             onClick={() => setProjectDropDown(false)}

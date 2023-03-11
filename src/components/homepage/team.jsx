@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Localization from "../../context/localization";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import insta from "../../images/socialmediaIcons/instagram.png";
+
 import { importAllImages } from "../../functions/common";
 import styles from "./team.module.css";
 
@@ -76,6 +76,7 @@ export default function Team() {
       title: strings.teamTtl11,
       img: images["home/team/Ben Abbot.jpg"],
       link: "https://www.instagram.com/abbott_ben/",
+      insta: true,
     },
   ];
 
@@ -94,15 +95,29 @@ export default function Team() {
                     {p.title}
                   </p>
                 </div>
-                <a
-                  href={p.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.linkedin}
-                >
-                  {/* <FontAwesomeIcon icon={faLinkedinIn} /> */}
-                  <img src={insta} alt="#" />
-                </a>
+                {!p.insta && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.linkedin}
+                  >
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                  </a>
+                )}
+                {p.insta && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.insta}
+                  >
+                    <img
+                      src={images["socialmediaIcons/instagram.png"]}
+                      alt="#"
+                    />
+                  </a>
+                )}
               </div>
             </div>
           );

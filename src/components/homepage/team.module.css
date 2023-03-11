@@ -39,18 +39,24 @@
 }
 
 .teamSection .linkedin {
-  /* background: #ac9679;
-    border-radius: 7px;
-    font-size: 18px;
-    width: 30px;
-    height: 30px; */
+  background: #ac9679;
+  border-radius: 7px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #000000;
   margin: 0 auto;
 }
-
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: 0 auto;
+}
 @media only screen and (max-width: 1440px) {
   .teamMembers {
     gap: 20px;
