@@ -32,7 +32,7 @@ export default function Sidebar({ showSidebar }) {
             {config.appName}
           </p>
           <div
-            className={styles.dropDownContainer}
+            className={`${styles.dropDownContainer} ${styles.aboutDropDownContainer}`}
             onClick={() => setProjectDropDown(false)}
           >
             <p
@@ -47,38 +47,41 @@ export default function Sidebar({ showSidebar }) {
                 icon={faCircleChevronDown}
               />
             </p>
-            {aboutDropDown && (
-              <div className={`${styles.dropdownItems}`}>
-                <a
-                  href="https://swords-of-blood-1.gitbook.io/swords-of-blood-whitepaper/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={[styles.navItem, styles.dropdownItem].join(" ")}
-                >
-                  {strings.wpTtl}
-                </a>
-                <NavLink
-                  to="/allocation/"
-                  className={({ isActive }) =>
-                    [
-                      styles.navItem,
-                      styles.dropdownItem,
-                      isActive ? styles.active : "",
-                    ].join(" ")
-                  }
-                >
-                  {strings.allocTtl}
-                </NavLink>
-                <a
-                  href="https://drive.google.com/file/d/1MJFo3b4eN7r_AOAGumzuahUak1C0z5cB/edit"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={[styles.navItem, styles.dropdownItems].join(" ")}
-                >
-                  {strings.deckTtl}
-                </a>
-              </div>
-            )}
+
+            <div
+              className={`${styles.dropdownItems} ${
+                aboutDropDown && styles.aboutDropDowns
+              }`}
+            >
+              <a
+                href="https://swords-of-blood-1.gitbook.io/swords-of-blood-whitepaper/"
+                target="_blank"
+                rel="noreferrer"
+                className={[styles.navItem, styles.dropdownItem].join(" ")}
+              >
+                {strings.wpTtl}
+              </a>
+              <NavLink
+                to="/allocation/"
+                className={({ isActive }) =>
+                  [
+                    styles.navItem,
+                    styles.dropdownItem,
+                    isActive ? styles.active : "",
+                  ].join(" ")
+                }
+              >
+                {strings.allocTtl}
+              </NavLink>
+              <a
+                href="https://drive.google.com/file/d/1MJFo3b4eN7r_AOAGumzuahUak1C0z5cB/edit"
+                target="_blank"
+                rel="noreferrer"
+                className={[styles.navItem, styles.dropdownItems].join(" ")}
+              >
+                {strings.deckTtl}
+              </a>
+            </div>
           </div>
           <NavLink
             to="/presale/"
@@ -95,7 +98,7 @@ export default function Sidebar({ showSidebar }) {
             {strings.presaleTtl}
           </NavLink>
           <div
-            className={styles.dropDownContainer}
+            className={`${styles.dropDownContainer} ${styles.projectDropDownContainer}`}
             onClick={() => setAboutDropDown(false)}
           >
             <p
@@ -110,30 +113,34 @@ export default function Sidebar({ showSidebar }) {
                 icon={faCircleChevronDown}
               />
             </p>
-            {projectDropDown && (
-              <div className={[styles.dropdownItems].join(" ")}>
-                <NavLink
-                  onClick={() => setProjectDropDown(true)}
-                  to="/roadmap/"
-                  className={({ isActive }) =>
-                    [
-                      styles.navItem,
-                      styles.dropdownItem,
-                      isActive ? styles.active : "",
-                    ].join(" ")
-                  }
-                >
-                  {strings.rmTtl}
-                </NavLink>
-                <a
-                  href="/assets/Sword-Token-(SWDTKN)-audit.pdf"
-                  target="_blank"
-                  className={[styles.navItem, styles.dropdownItem].join(" ")}
-                >
-                  {strings.auditTtl}
-                </a>
-              </div>
-            )}
+
+            <div
+              className={[
+                styles.dropdownItems,
+                `${projectDropDown && styles.projectDropDowns}`,
+              ].join(" ")}
+            >
+              <NavLink
+                onClick={() => setProjectDropDown(true)}
+                to="/roadmap/"
+                className={({ isActive }) =>
+                  [
+                    styles.navItem,
+                    styles.dropdownItem,
+                    isActive ? styles.active : "",
+                  ].join(" ")
+                }
+              >
+                {strings.rmTtl}
+              </NavLink>
+              <a
+                href="/assets/Sword-Token-(SWDTKN)-audit.pdf"
+                target="_blank"
+                className={[styles.navItem, styles.dropdownItem].join(" ")}
+              >
+                {strings.auditTtl}
+              </a>
+            </div>
           </div>
         </div>
       </div>
