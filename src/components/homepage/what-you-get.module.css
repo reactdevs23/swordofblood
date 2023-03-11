@@ -1,32 +1,38 @@
 .whatYouGet {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 .imageAndtext {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    background: #050505 url("../../images/home/Bg.png");
-    background-size: cover;
-    padding-right: 5px;
-    background-repeat: no-repeat;
-    border-radius: 14px;
-    border: 1px solid #c9ab84;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #050505 url("../../images/home/Bg.png");
+  background-size: cover;
+  padding-right: 5px;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  border: 1px solid #c9ab84;
 }
 
 @media only screen and (max-width: 991px) {
-    .whatYouGet {
-        padding: 20px 0;
-        padding-top: 0px;
-    }
+  .whatYouGet {
+    padding: 20px 0;
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 428px) {
-    .whatYouGet {
-        grid-template-columns: 1fr;
-    }
+  .whatYouGet {
+    grid-template-columns: 1fr;
+  }
 
-    .imageAndtext {
-        padding-left: 5px;
-    }
+  .whatYouGet .imageAndtext {
+    padding-left: 5px;
+  }
+  .whatYouGet .title {
+    font-size: 16px;
+  }
+  .imageAndtext {
+    gap: 0;
+  }
 }

@@ -452,38 +452,23 @@ export default function Banner() {
         <div className={["swiper-wrapper", styles.heroSection].join(" ")}>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/presale-banner 1.png"]}
+              src={images["home/banner/banner1.jpg"]}
               alt="#"
-              className={["image", "dekstopImage", styles.image].join(" ")}
-            />
-            <img
-              src={images["home/banner/presale-banner1-d.jpg"]}
-              alt="#"
-              className={["image", "mobileImage", styles.image].join(" ")}
+              className={["image", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/presale-banner 1.png"]}
+              src={images["home/banner/banner2.jpg"]}
               alt="#"
-              className={["image", "dekstopImage", styles.image].join(" ")}
-            />
-            <img
-              src={images["home/banner/presale-banner1-d.jpg"]}
-              alt="#"
-              className={["image", "mobileImage", styles.image].join(" ")}
+              className={["image", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/presale-banner 1.png"]}
+              src={images["home/banner/banner3.jpg"]}
               alt="#"
-              className={["image", "dekstopImage", styles.image].join(" ")}
-            />
-            <img
-              src={images["home/banner/presale-banner1-d.jpg"]}
-              alt="#"
-              className={["image", "mobileImage", styles.image].join(" ")}
+              className={["image", styles.image].join(" ")}
             />
           </div>
         </div>
@@ -510,7 +495,7 @@ export default function Banner() {
                   />
                   <div className={styles.presaleTextAndAmount}>
                     <span
-                      className="text"
+                      className={`text ${styles.titleText}`}
                       style={{ textTransform: "uppercase" }}
                     >
                       {strings.presaleStage}{" "}

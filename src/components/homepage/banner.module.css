@@ -257,25 +257,15 @@
   }
 }
 
-@media only screen and (max-width: 520px) {
-  .banner .mobileImage {
-    display: block;
-  }
-
-  .banner .dekstopImage {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 400px) {
   .banner .connectWallet {
     padding: 16px 10px;
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .banner .amountContainer {
-    padding: 16px 0;
+    padding: 23px 0;
   }
 
   .banner .amountAndText {
@@ -283,17 +273,27 @@
   }
 
   .banner .amountText {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .banner .amountNumber {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .presaleTextAndAmount .titleText {
+    font-size: 14px;
+  }
+  .banner .presaleImage {
+    width: 45px;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 370px) {
+  .banner .presaleAndText {
+    gap: 12px;
+  }
   .banner .amountContainer {
-    padding: 19px 0;
+    padding: 27px 0;
   }
 
   .banner .amountAndText {
@@ -305,16 +305,13 @@
   }
 
   .banner .amountNumber {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .banner .connectWallet {
     font-size: 16px;
   }
-}
-
-@media only screen and (max-width: 351px) {
-  .banner .amountContainer {
-    padding: 12px 0;
+  .presaleTextAndAmount .text {
+    font-size: 12px;
   }
 }
