@@ -3,12 +3,13 @@
 }
 
 .heroSection {
+  height: 314px !important;
   margin-top: 30px;
 }
 
 .banner .image {
   height: 100%;
-
+  /* object-fit: cover; */
   border-radius: 14px;
 }
 
