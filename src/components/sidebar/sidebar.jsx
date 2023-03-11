@@ -28,7 +28,13 @@ export default function Sidebar({ showSidebar }) {
           />
         </NavLink>
         <div className={styles.navItems}>
-          <p className={[styles.navItem, styles.navBtn].join(" ")}>
+          <p
+            className={[styles.navItem, styles.navBtn].join(" ")}
+            onClick={() => {
+              setProjectDropDown(false);
+              setAboutDropDown(false);
+            }}
+          >
             {config.appName}
           </p>
           <div
@@ -84,6 +90,10 @@ export default function Sidebar({ showSidebar }) {
             </div>
           </div>
           <NavLink
+            onClick={() => {
+              setProjectDropDown(false);
+              setAboutDropDown(false);
+            }}
             to="/presale/"
             className={({ isActive }) =>
               [
@@ -144,7 +154,12 @@ export default function Sidebar({ showSidebar }) {
           </div>
         </div>
       </div>
-      <div>
+      <div
+        onClick={() => {
+          setProjectDropDown(false);
+          setAboutDropDown(false);
+        }}
+      >
         <div className={styles.quicklinksContainer}>
           <h6 className={styles.quichLinksHeader}>{strings.quickLinksTtl}</h6>
           <NavLink to="/privacy/" className={styles.link}>
