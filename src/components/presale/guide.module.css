@@ -1,0 +1,66 @@
+.howTobuyWrapper {
+    padding: 50px 0;
+}
+
+.howTobuyWrapper .heading {
+    padding-bottom: 40px;
+}
+
+.howToBuy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    padding: 20px 0;
+}
+
+.howToBuy .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 361px;
+}
+
+.howToBuy .presaleHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.howToBuy .presaleIcon {
+    width: 28.74px;
+}
+
+.howToBuy .text {
+    text-align: left;
+}
+
+@media only screen and (max-width: 1199px) {
+    .howToBuy {
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .howToBuy {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+    }
+
+    .howToBuy .image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .howToBuy .textContainer {
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .howToBuy .textContainer {
+        padding: 0;
+    }
+}
