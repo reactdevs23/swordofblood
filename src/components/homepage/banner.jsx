@@ -452,36 +452,36 @@ export default function Banner() {
         <div className={["swiper-wrapper", styles.heroSection].join(" ")}>
           <div className="swiper-slide">
             <img
-              src={images["home/herosectionbg.png"]}
+              src={images["home/banner/herosectionbg.png"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/mobileherobg.png"]}
+              src={images["home/banner/mobileherobg.png"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/herosectionbg.png"]}
+              src={images["home/banner/herosectionbg2.jpg"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/mobileherobg.png"]}
+              src={images["home/banner/mobileherobg2.jpg"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/herosectionbg.png"]}
+              src={images["home/banner/herosectionbg3.jpg"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/mobileherobg.png"]}
+              src={images["home/banner/mobileherobg3.jpg"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
