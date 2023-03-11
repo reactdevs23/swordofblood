@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Localization from "../../context/localization";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import insta from "../../images/socialmediaIcons/instagram.png";
 import { importAllImages } from "../../functions/common";
 import styles from "./team.module.css";
 
@@ -99,7 +100,8 @@ export default function Team() {
                   rel="noreferrer"
                   className={styles.linkedin}
                 >
-                  <FontAwesomeIcon icon={faLinkedinIn} />
+                  {/* <FontAwesomeIcon icon={faLinkedinIn} /> */}
+                  <img src={insta} alt="#" />
                 </a>
               </div>
             </div>
