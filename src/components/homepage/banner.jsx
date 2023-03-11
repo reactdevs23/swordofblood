@@ -452,36 +452,36 @@ export default function Banner() {
         <div className={["swiper-wrapper", styles.heroSection].join(" ")}>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/herosectionbg.png"]}
+              src={images["home/banner/presale-banner1.jpg"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/banner/mobileherobg.png"]}
+              src={images["home/banner/presale-banner1-m.jpg"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/herosectionbg2.jpg"]}
+              src={images["home/banner/presale-banner2.jpg"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/banner/mobileherobg2.jpg"]}
+              src={images["home/banner/presale-banner2-m.jpg"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />
           </div>
           <div className="swiper-slide">
             <img
-              src={images["home/banner/herosectionbg3.jpg"]}
+              src={images["home/banner/presale-banner3.jpg"]}
               alt="#"
               className={["image", "dekstopImage", styles.image].join(" ")}
             />
             <img
-              src={images["home/banner/mobileherobg3.jpg"]}
+              src={images["home/banner/presale-banner3-m"]}
               alt="#"
               className={["image", "mobileImage", styles.image].join(" ")}
             />

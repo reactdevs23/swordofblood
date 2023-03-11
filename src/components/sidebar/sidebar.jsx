@@ -31,7 +31,10 @@ export default function Sidebar({ showSidebar }) {
           <p className={[styles.navItem, styles.navBtn].join(" ")}>
             {config.appName}
           </p>
-          <div className={styles.dropDownContainer}>
+          <div
+            className={styles.dropDownContainer}
+            onClick={() => setProjectDropDown(false)}
+          >
             <p
               className={[styles.dropdownHeader, styles.navBtn].join(" ")}
               onClick={() => setAboutDropDown((prev) => !prev)}
@@ -91,7 +94,10 @@ export default function Sidebar({ showSidebar }) {
           >
             {strings.presaleTtl}
           </NavLink>
-          <div className={styles.dropDownContainer}>
+          <div
+            className={styles.dropDownContainer}
+            onClick={() => setAboutDropDown(false)}
+          >
             <p
               className={[styles.dropdownHeader, styles.navBtn].join(" ")}
               onClick={() => setProjectDropDown((prev) => !prev)}
