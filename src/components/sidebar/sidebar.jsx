@@ -145,7 +145,8 @@ export default function Sidebar({ showSidebar }) {
                 {strings.rmTtl}
               </NavLink>
               <a
-                href="/assets/Sword-Token-(SWDTKN)-audit.pdf"
+                href="https://github.com/solidproof/projects/blob/main/Swords%20of%20Blood/SmartContract_Audit_Solidproof_SwordsOfBlood.pdf"
+                rel="noreferrer"
                 target="_blank"
                 className={[styles.navItem, styles.dropdownItem].join(" ")}
               >
