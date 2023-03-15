@@ -29,7 +29,7 @@ export default function Strings() {
 
     // buyBeforeTheEnd: "Hurry before the end of presale!",
     buyBeforeTheEnd: "Please wait for announcements",
-    buyBefore: "Hurry before stage {STAGE} price will increases to $0.056!!",
+    buyBefore: "Hurry before stage {STAGE} price will increases to {PRICE}!!",
     soldTtl: "Sold",
     raisedTtl: "Raised",
     connectWallet: "Connect Wallet",
