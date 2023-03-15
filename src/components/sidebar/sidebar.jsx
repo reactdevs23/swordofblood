@@ -81,7 +81,7 @@ export default function Sidebar({ showSidebar }) {
                 {strings.allocTtl}
               </NavLink>
               <a
-                href="https://drive.google.com/file/d/1MJFo3b4eN7r_AOAGumzuahUak1C0z5cB/edit"
+                href="/assets/Swords of Blood Pitchdeck Lite.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className={[styles.navItem, styles.dropdownItems].join(" ")}
