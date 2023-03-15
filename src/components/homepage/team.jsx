@@ -45,7 +45,8 @@ export default function Team() {
       name: strings.teamName6,
       title: strings.teamTtl6,
       img: images["home/team/John-Moyer.png"],
-      link: "https://www.linkedin.com/",
+      link: "https://www.instagram.com/johnmoyerbass/",
+      insta: true,
     },
     {
       name: strings.teamName7,
