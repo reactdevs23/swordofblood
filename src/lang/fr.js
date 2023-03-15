@@ -29,7 +29,7 @@ export default function Strings() {
     // buyBeforeTheEnd: "Dépêchez-vous avant la fin de la prévente!",
     buyBeforeTheEnd: "Veuillez attendre les annonces",
     buyBefore:
-      "Dépêchez-vous avant que le prix de l'étape {STAGE}  n'atteigne $0,056!",
+      "Dépêchez-vous avant que le prix de l'étape {STAGE}  n'atteigne ${PRICE}!",
 
     soldTtl: "Vendu",
     raisedTtl: "Collecté",

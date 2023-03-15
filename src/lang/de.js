@@ -29,7 +29,7 @@ export default function Strings() {
     // buyBeforeTheEnd: "Beeilen Sie sich vor dem Ende des Vorverkaufs!",
     buyBeforeTheEnd: "Bitte warten Sie auf Ankündigungen",
     buyBefore:
-      "Beeilen Sie sich, bevor der Preis für Stufe {STAGE} auf $0,056  steigt!",
+      "Beeilen Sie sich, bevor der Preis für Stufe {STAGE} auf ${PRICE}  steigt!",
     soldTtl: "Verkauft",
     raisedTtl: "Gesammelt",
     connectWallet: "Verbinde das Wallet",
