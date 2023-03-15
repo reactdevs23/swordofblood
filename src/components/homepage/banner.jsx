@@ -506,15 +506,15 @@ export default function Banner() {
                     </span>
                   </div>
                 </div>
-                {presaleData.nextPrice ? (
-                  <p className={styles.info}>
-                    {strings.buyBefore
-                      .replace("{STAGE}", presaleData.currentStage + 2)
-                      .replace("{PRICE}", presaleData.nextPrice)}
-                  </p>
-                ) : (
+                {/* {presaleData.nextPrice ? ( */}
+                <p className={styles.info}>
+                  {strings.buyBefore
+                    .replace("{STAGE}", presaleData.currentStage + 2)
+                    .replace("{PRICE}", presaleData.nextPrice)}
+                </p>
+                {/* ) : (
                   <p className={styles.info}>{strings.buyBeforeTheEnd}</p>
-                )}
+                )} */}
                 <div className={styles.progress}>
                   <div
                     ref={progressLine}

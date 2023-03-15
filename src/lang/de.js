@@ -25,11 +25,11 @@ export default function Strings() {
       "Suite 305 Griffith Corporate Centre, Kingstown, St Vincent, and the Grenadines.",
     quickLinks: "Quick links",
     // presaleStage: "Vorverkaufsphase",
-    presaleStage: "VORVERKAUF 1 ERÖFFNET BALD",
+    presaleStage: "VORVERKAUF 1 ist live!",
     // buyBeforeTheEnd: "Beeilen Sie sich vor dem Ende des Vorverkaufs!",
     buyBeforeTheEnd: "Bitte warten Sie auf Ankündigungen",
     buyBefore:
-      "Beeilen Sie sich, bevor der Stufe {STAGE} auf {PRICE} steigt USDT!",
+      "Beeilen Sie sich, bevor der Preis für Stufe {STAGE} auf $0,056  steigt!",
     soldTtl: "Verkauft",
     raisedTtl: "Gesammelt",
     connectWallet: "Verbinde das Wallet",
