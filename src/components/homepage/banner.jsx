@@ -556,11 +556,11 @@ export default function Banner() {
               </>
             )}
           </div>
-          {!inLoading && presaleData && curStep === 0 && (
-            <button onClick={connectWallet} className={styles.connectWallet}>
-              {strings.connectWallet}
-            </button>
-          )}
+          {/* {!inLoading && presaleData && curStep === 0 && ( */}
+          <button onClick={connectWallet} className={styles.connectWallet}>
+            {strings.connectWallet}
+          </button>
+          {/* )} */}
           {!inLoading && presaleData && curStep === 1 && (
             <>
               {!presaleData.buyBtnDisabled ? (

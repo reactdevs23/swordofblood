@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Localization from "../../context/localization";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
