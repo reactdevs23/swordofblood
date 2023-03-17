@@ -561,60 +561,60 @@ export default function Banner() {
             {strings.connectWallet}
           </button>
           {/* )} */}
-          {!inLoading && presaleData && curStep === 1 && (
-            <>
-              {!presaleData.buyBtnDisabled ? (
-                <div className={styles.buyingMethod}>
-                  <button
-                    onClick={() => {
-                      setPurchaseToken(4);
-                      setShowBuyModal(true);
-                    }}
-                    className={styles.buyingButton}
-                  >
-                    {strings.buyWith} ETH
-                  </button>
-                  <button
-                    onClick={() => {
-                      setPurchaseToken(0);
-                      setShowBuyModal(true);
-                    }}
-                    className={styles.buyingButton}
-                  >
-                    {strings.buyWith} USDT
-                  </button>
-                  <button
-                    onClick={() => {
-                      setPurchaseToken(1);
-                      setShowBuyModal(true);
-                    }}
-                    className={styles.buyingButton}
-                  >
-                    {strings.buyWith} USDC
-                  </button>
-                  <button
-                    onClick={() => {
-                      setPurchaseToken(3);
-                      setShowBuyModal(true);
-                    }}
-                    className={styles.buyingButton}
-                  >
-                    {strings.buyWith} DAI
-                  </button>
-                </div>
-              ) : (
+          {/* {!inLoading && presaleData && curStep === 1 && ( */}
+          <>
+            {!presaleData.buyBtnDisabled ? (
+              <div className={styles.buyingMethod}>
                 <button
-                  onClick={async () => {
-                    setInLoading(true);
-                    await claimTokens();
+                  onClick={() => {
+                    setPurchaseToken(4);
+                    setShowBuyModal(true);
                   }}
-                  className={styles.connectWallet}
+                  className={styles.buyingButton}
                 >
-                  {strings.claimTokens}
+                  {strings.buyWith} ETH
                 </button>
-              )}
-            </>
-          )}
+                <button
+                  onClick={() => {
+                    setPurchaseToken(0);
+                    setShowBuyModal(true);
+                  }}
+                  className={styles.buyingButton}
+                >
+                  {strings.buyWith} USDT
+                </button>
+                <button
+                  onClick={() => {
+                    setPurchaseToken(1);
+                    setShowBuyModal(true);
+                  }}
+                  className={styles.buyingButton}
+                >
+                  {strings.buyWith} USDC
+                </button>
+                <button
+                  onClick={() => {
+                    setPurchaseToken(3);
+                    setShowBuyModal(true);
+                  }}
+                  className={styles.buyingButton}
+                >
+                  {strings.buyWith} DAI
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={async () => {
+                  setInLoading(true);
+                  await claimTokens();
+                }}
+                className={styles.connectWallet}
+              >
+                {strings.claimTokens}
+              </button>
+            )}
+          </>
+          {/* )} */}
           {!inLoading && curStep === 2 && (
             <span className={styles.statusText}>{presaleData.statusText}</span>
           )}
