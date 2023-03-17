@@ -1,0 +1,92 @@
+.teamSection {
+  padding: 40px 0;
+}
+
+.teamMembers {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 35px;
+  padding-top: 70px;
+}
+
+.teamMember {
+  padding-top: 12px;
+  height: 100%;
+}
+
+.teamImage {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+}
+
+.teamSection .infoAndSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.teamSection .text {
+  padding-top: 4px;
+}
+
+.teamSection .subtext {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.teamSection .linkedin {
+  background: #ac9679;
+  border-radius: 7px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: 0 auto;
+}
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin: 0 auto;
+}
+.insta img {
+  width: 30px;
+}
+@media only screen and (max-width: 1440px) {
+  .teamMembers {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .teamMembers {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .teamMembers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .teamMembers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .teamMembers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
